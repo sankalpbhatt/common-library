@@ -1,14 +1,14 @@
 package com.common.exception;
 
+import java.util.List;
+
 public class MyServiceException extends RuntimeException{
 
-    private String field;
-    private Code code;
+    private final List<MessageResponse> response;
 
-    MyServiceException( String field, Code code, String message, Throwable cause){
+    public MyServiceException(String field, Code code, String errorCode, String message, Throwable cause){
         super(message, cause);
-        this.field = field;
-        this.code = code;
+        this.response = List.of( new MessageResponse(field, code, message, null, errorCode) );
     }
 
     public enum Code{
