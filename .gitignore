@@ -16,6 +16,9 @@
 # Gradle files
 /.gradle/*
 
+# Build files
+/build/*
+
 # Package Files #
 *.jar
 *.war
