@@ -13,9 +13,6 @@
 # idea files
 /.idea
 
-# Gradle files
-/.gradle/*
-
 # Package Files #
 *.jar
 *.war
