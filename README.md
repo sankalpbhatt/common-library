@@ -1,1 +1,3 @@
 # common-library
+This project is meant to create general utility which should be leveraged into other projects.
+Details index to be posted soon...
